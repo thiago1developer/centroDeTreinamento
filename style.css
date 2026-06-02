@@ -1,0 +1,639 @@
+*{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      font-family:'Montserrat', sans-serif;
+      background:#050816;
+      color:#fff;
+      overflow-x:hidden;
+    }
+
+    html{
+      scroll-behavior:smooth;
+    }
+
+    .container{
+      width:90%;
+      max-width:1200px;
+      margin:auto;
+    }
+
+    header{
+      position:fixed;
+      width:100%;
+      top:0;
+      left:0;
+      z-index:999;
+      background:rgba(0,0,0,0.6);
+      backdrop-filter:blur(10px);
+      padding:18px 0;
+    }
+
+    nav{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+
+    .logo{
+      font-size:1.5rem;
+      font-weight:800;
+      color:#fff;
+    }
+
+    .logo span{
+      color:#004bee;
+    }
+
+    nav ul{
+      display:flex;
+      gap:30px;
+      list-style:none;
+    }
+
+    nav a{
+      color:#fff;
+      text-decoration:none;
+      font-weight:500;
+      transition:0.3s;
+    }
+
+    nav a:hover{
+      color:#f5a623;
+    }
+
+    .btn{
+      background:#002d80;
+      color:#ffffff;
+      padding:14px 28px;
+      border-radius:10px;
+      text-decoration:none;
+      font-weight:700;
+      display:inline-block;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      transform:translateY(-3px);
+    }
+     /* HERO */
+
+    .hero{
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      background:
+      linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.8)),
+      url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=1974&auto=format&fit=crop');
+      background-size:cover;
+      background-position:center;
+      padding-top:100px;
+    }
+
+    .hero-content{
+      max-width:700px;
+    }
+
+    .hero h1{
+      font-size:4rem;
+      line-height:1.1;
+      margin-bottom:20px;
+    }
+
+    .hero h1 span{
+      color:#3060ff;
+    }
+
+    .hero p{
+      font-size:1.2rem;
+      margin-bottom:35px;
+      color:#d6d6d6;
+      line-height:1.7;
+    }
+     /* SECTIONS */
+
+    section{
+      padding:80px 0;
+    }
+
+    .section-title{
+      text-align:center;
+      margin-bottom:60px;
+    }
+
+    .section-title h2{
+      font-size:2.8rem;
+      margin-bottom:10px;
+    }
+
+    .section-title p{
+      color:#aaa;
+    }
+
+/* PLANOS */
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:25px;
+    }
+
+    .card{
+      background:#0e1427;
+      padding:35px;
+      border-radius:20px;
+      transition:0.3s;
+      border:1px solid transparent;
+      text-align: center;
+    }
+
+    .card:hover{
+      transform:translateY(-10px);
+      border-color:#f5a623;
+    }
+
+    .card h3{
+      margin-bottom:15px;
+      color:#1b56f8;
+    }
+
+    .card p{
+      color:#cfcfcf;
+      line-height:1.6;
+    }
+/* STEPS */
+
+    .steps{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:25px;
+    }
+
+    .step{
+      text-align:center;
+      background:#0e1427;
+      padding:40px 25px;
+      border-radius:20px;
+    }
+
+    .step span{
+      width:60px;
+      height:60px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      margin:auto;
+      margin-bottom:20px;
+      background:#234af5;
+      color:#ffffff;
+      border-radius:50%;
+      font-weight:800;
+      font-size:1.3rem;
+    }
+/* TESTIMONIALS */
+
+    .testimonial{
+      background:#0e1427;
+      padding:30px;
+      border-radius:20px;
+    }
+
+    .testimonial p{
+      line-height:1.7;
+      color:#ddd;
+      margin-bottom:20px;
+    }
+
+    .testimonial h4{
+      color:#2354f5;
+    }
+.cta{
+      text-align:center;
+      background:
+      linear-gradient(135deg,#07152f,#02050d);
+    }
+
+    .cta h2{
+      font-size:3rem;
+      margin-bottom:20px;
+    }
+
+    .cta p{
+      max-width:700px;
+      margin:auto;
+      margin-bottom:35px;
+      color:#d3d3d3;
+      line-height:1.7;
+    }
+
+    footer{
+      padding:40px 0;
+      text-align:center;
+      background:#02040b;
+      color:#999;
+    }
+
+    footer a{
+      color:#f5a623;
+      text-decoration:none;
+    }
+
+    @media(max-width:768px){
+
+      .hero h1{
+        font-size:2.5rem;
+      }
+
+      nav ul{
+        display:none;
+      }
+
+      .section-title h2{
+        font-size:2rem;
+      }
+
+      .cta h2{
+        font-size:2rem;
+      }
+      .btn {
+        font-size: 0.9rem;
+        margin: 20px;
+        text-align: center;
+      }
+    }
+/*CSS DOS CONTADORES
+===================*/
+
+
+.numbers{
+  padding:100px 5%;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:25px;
+  background:#07152f;
+}
+
+.number-box{
+  background:#0e1427;
+  padding:40px;
+  border-radius:20px;
+  text-align:center;
+  border:1px solid rgba(255,255,255,0.05);
+  transition:0.3s;
+}
+
+.number-box:hover{
+  transform:translateY(-10px);
+  border-color:#f5a623;
+}
+
+.number-box h2{
+  font-size:4rem;
+  color:#f5a623;
+  margin-bottom:10px;
+}
+
+.number-box p{
+  color:#d7d7d7;
+  font-weight:600;
+}
+
+/*========================================
+CSS BOTÃO WHATSAPP
+========================================*/
+
+.whatsapp-float{
+  position:fixed;
+  width:70px;
+  height:70px;
+  bottom:25px;
+  right:25px;
+  background:#25D366;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  box-shadow:0 10px 25px rgba(0,0,0,0.4);
+  z-index:99999;
+  transition:0.3s;
+  animation:whatsappPulse 2s infinite;
+}
+
+.whatsapp-float img{
+  width:38px;
+  height:38px;
+}
+
+.whatsapp-float:hover{
+  transform:scale(1.1);
+}
+
+@keyframes whatsappPulse{
+
+  0%{
+    box-shadow:0 0 0 0 rgba(37,211,102,0.7);
+  }
+
+  70%{
+    box-shadow:0 0 0 20px rgba(37,211,102,0);
+  }
+
+  100%{
+    box-shadow:0 0 0 0 rgba(37,211,102,0);
+  }
+
+}
+
+/*========================================
+CSS INSTAGRAM
+========================================*/
+
+.instagram-section{
+  padding:80px 5%;
+}
+
+.instagram-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+.instagram-grid a{
+  display:block;
+  overflow:hidden;
+  border-radius:20px;
+}
+
+.instagram-grid img{
+  width:100%;
+  height:320px;
+  object-fit:cover;
+  display:block;
+  transition:0.4s;
+}
+
+.instagram-grid img:hover{
+  transform:scale(1.05);
+}
+
+.instagram-proof{
+
+ text-align:center;
+ margin-bottom:25px;
+ margin-top: 25px;
+ color:#d7d7d7;
+
+}
+
+
+/* DARK MODE */
+
+body{
+  position:relative;
+  overflow-x:hidden;
+}
+
+/* GLOW 1 */
+
+body::before{
+  content:"";
+  position:fixed;
+  width:500px;
+  height:500px;
+  background:#0d3bff;
+  border-radius:50%;
+  filter:blur(140px);
+  opacity:0.12;
+  top:-150px;
+  left:-150px;
+  z-index:-1;
+}
+
+/* GLOW 2 */
+
+body::after{
+  content:"";
+  position:fixed;
+  width:400px;
+  height:400px;
+  background:#f5a623;
+  border-radius:50%;
+  filter:blur(140px);
+  opacity:0.08;
+  bottom:-100px;
+  right:-100px;
+  z-index:-1;
+}
+
+/* BRILHO NOS CARDS */
+
+.card{
+  position:relative;
+  overflow:hidden;
+}
+
+.card::before{
+  content:"";
+  position:absolute;
+  width:150px;
+  height:150px;
+  background:rgba(245,166,35,0.15);
+  border-radius:50%;
+  filter:blur(50px);
+  top:-50px;
+  right:-50px;
+}
+
+/* HERO OVERLAY */
+
+.hero::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:
+  radial-gradient(circle at top left,
+  rgba(13,59,255,0.25),
+  transparent 40%);
+}
+
+.hero{
+  position:relative;
+}
+
+/*BOTÃO INSTAGRAM*/
+
+.instagram-link{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  margin-top:10px;
+  margin-bottom: 65PX;
+  text-decoration:none;
+  color:#f5a623;
+  font-weight:700;
+  font-size:1.1rem;
+}
+
+.instagram-link img{
+  width:28px;
+  height:28px;
+}
+
+.instagram-link:hover{
+  opacity:0.8;
+}
+
+.hero-wrapper{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:50px;
+}
+
+.hero-image img{
+  max-width:450px;
+  width:100%;
+}
+
+@media(max-width:768px){
+
+  .hero-wrapper{
+    flex-direction:column;
+    text-align:center;
+  }
+
+  .hero-image img{
+    max-width:280px;
+  }
+
+}
+
+/*CONHEÇA O TREINADOR*/
+
+.about-wrapper{
+  display:flex;
+  align-items:center;
+  gap:50px;
+}
+
+.about-wrapper img{
+  width:300px;
+  border-radius:20px;
+}
+
+@media(max-width:768px){
+
+  .about-wrapper{
+    flex-direction:column;
+    text-align:center;
+  }
+
+}
+
+/*AVALIAÇÃO GRATUITA*/
+/*.avaliacao{
+
+ text-align:center;
+ background:#07152f;
+
+}
+
+.avaliacao h2{
+
+ margin-bottom:20px;
+
+}
+
+.avaliacao p{
+
+ max-width:700px;
+ margin:auto;
+ margin-bottom:30px;
+
+}*/
+
+/* ========================================
+VÍDEOS INSTAGRAM
+======================================== */
+
+#videos-instagram{
+  padding:80px 0;
+}
+
+.instagram-videos{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+  gap:30px;
+  align-items:start;
+}
+
+.instagram-media{
+  background:#0e1427 !important;
+  border-radius:20px !important;
+  overflow:hidden !important;
+  width:100% !important;
+  min-width:100% !important;
+  max-width:100% !important;
+  margin:0 !important;
+  box-shadow:0 10px 30px rgba(0,0,0,0.3);
+  transition:0.3s;
+}
+
+.instagram-media:hover{
+  transform:translateY(-8px);
+}
+
+@media(max-width:768px){
+
+  .instagram-videos{
+    grid-template-columns:1fr;
+  }
+
+}
+
+/* ========================================
+LOCALIZAÇÃO
+======================================== */
+
+#localizacao{
+  padding:80px 0;
+}
+
+.map-container{
+  overflow:hidden;
+  border-radius:20px;
+  margin-bottom:30px;
+  box-shadow:0 15px 35px rgba(0,0,0,0.3);
+}
+
+.map-container iframe{
+  width:100%;
+  height:450px;
+  border:none;
+}
+
+.location-info{
+  text-align:center;
+}
+
+.location-info h3{
+  margin-bottom:10px;
+  color:#3060ff;
+}
+
+.location-info p{
+  color:#d7d7d7;
+  margin-bottom:25px;
+}
+
+@media(max-width:768px){
+
+  .map-container iframe{
+    height:300px;
+  }
+
+}
