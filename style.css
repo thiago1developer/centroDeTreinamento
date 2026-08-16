@@ -164,6 +164,17 @@
       color:#cfcfcf;
       line-height:1.6;
     }
+
+    .consulte{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 20px;
+    background-color: #e8f53a;
+    border-radius: 20px;
+    padding: 20px;
+
+    
+    }
 /* STEPS */
 
     .steps{
